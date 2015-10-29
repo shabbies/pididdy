@@ -10,9 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 import org.apache.commons.io.IOUtils;
-import org.apache.http.entity.ContentType;
-import org.apache.http.entity.mime.HttpMultipartMode;
-import org.apache.http.entity.mime.MultipartEntityBuilder;
+
 
 @MultipartConfig
 public class FileUploadServlet extends HttpServlet {
@@ -26,7 +24,7 @@ public class FileUploadServlet extends HttpServlet {
             avatarByte = IOUtils.toByteArray(avatarPart.getInputStream());
         }
         
-        System.out.println("HIHI its working");
+//        System.out.println("HIHI its working");
         
         String filePath = avatarPart.getName();
 
