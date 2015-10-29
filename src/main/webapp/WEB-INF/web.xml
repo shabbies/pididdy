@@ -16,6 +16,6 @@
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>FileUploadServlet</servlet-name>
-        <url-pattern>/FileUploadServlet</url-pattern>
+        <url-pattern>/fileupload</url-pattern>
     </servlet-mapping>
 </web-app>    
