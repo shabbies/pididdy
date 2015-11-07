@@ -9,6 +9,10 @@
         <servlet-name>FileUploadServlet</servlet-name>
         <servlet-class>servlet.FileUploadServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>S3UploadServlet</servlet-name>
+        <servlet-class>servlet.S3UploadServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
@@ -17,5 +21,9 @@
     <servlet-mapping>
         <servlet-name>FileUploadServlet</servlet-name>
         <url-pattern>/fileupload</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>S3UploadServlet</servlet-name>
+        <url-pattern>/s3upload</url-pattern>
     </servlet-mapping>
 </web-app>    

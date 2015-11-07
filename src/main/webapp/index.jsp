@@ -12,7 +12,7 @@
 
             <form action="fileupload" method="post" enctype="multipart/form-data">
                 <p>
-                    Select a file : <input type="file" name="fileInput" />
+                    Select a file : <input type="file" name="file" />
                 </p>
                 <input type="submit" value="Upload It" />
             </form>
