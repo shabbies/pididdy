@@ -8,15 +8,14 @@
     </head>
     <body>
         <div>
-            <h1>Upload a File</h1>
-
-            <form action="fileupload" method="post" enctype="multipart/form-data">
-                <p>
-                    Select a file : <input type="file" name="file" />
+            <h1>File Upload</h1>
+            <form method="post" action="/fileupload" enctype="multipart/form-data">
+                <p>Select file to upload:
+                <input type="file" name="file" />
                 </p>
-                <input type="submit" value="Upload It" />
+                <br>
+                <input type="submit" value="Upload" />
             </form>
-
         </div>
     </body>
 </html>
