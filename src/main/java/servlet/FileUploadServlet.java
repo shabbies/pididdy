@@ -7,7 +7,6 @@ import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3Client;
 import com.amazonaws.services.s3.model.ObjectMetadata;
 import com.amazonaws.services.s3.model.PutObjectRequest;
-import com.pi.diddy.controller.OcrController;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -47,7 +46,7 @@ public class FileUploadServlet extends HttpServlet {
         s3.setRegion(se1);
 
         String bucketName = "media.pi-diddy.herokuapp.com";
-        String key = fileName + ".jpg";
+        String key = fileName + "1.jpg";
         
         ObjectMetadata data = new ObjectMetadata();
         data.setContentType(avatarPart.getContentType());
